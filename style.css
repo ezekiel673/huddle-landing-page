@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+
+}
+body{
+    background: url(images/bg-desktop.svg)no-repeat var(--Violet);
+    color: white ;
+    height: 800px;
+    /* overflow: hidden; */
+}
+.main{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
+    margin-left: 30px;
+    padding-top: 40px;
+}
+.main .container{
+    display: flex;
+    gap: 35px;
+    padding-top: 40px;
+}
+
+.container  .note{
+    margin-top: 40px;
+}
+.note h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.6;
+    max-width: 70%;
+    word-spacing: 2px;
+    margin-bottom: 14px;
+}
+.note p{
+   font-family: 'Open Sans', sans-serif;
+    line-height: 1.7;
+    font-size: 1.35rem;
+}
+.note button{
+    border-style: none;
+    background: white;
+    color: var(--Violet);
+    border-radius: 30px;   
+    cursor: pointer;
+    padding: 14px 50px 16px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 18px;
+}
+.note button:hover{
+background: var(--Soft-Magenta);
+ color:white ;
+ box-shadow: 10px 10px 5px solid black;
+}
+footer{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+footer .tweet, .face, .insta{
+    border: 1px solid white;
+    border-radius: 45%;
+    height:24px ;
+    width: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+footer .tweet:hover, .face:hover, .insta:hover{
+    border: 1px solid var(--Soft-Magenta);
+}
+footer .tweet:hover svg, .face:hover svg, .insta:hover svg{
+    fill: var(--Soft-Magenta);
+}
+
+footer svg{
+    width: 12px;
+    fill: white;
+}
+.face svg{
+    width: 8px;
+}
+@media(1100px >= width >= 1000px){
+    .illustra{
+        width: 100%;
+    }
+    .illustra img{
+        width:500px ;
+        height: 500px;
+    }
+    .note h1{
+        max-width: 100%;
+    }
+
+}
+@media(max-width:800px){
+    body{
+         background: url(images/bg-mobile.svg) var(--Violet);
+         background-repeat: no-repeat;
+    }
+    .main{
+        max-width: 80%;
+    }
+    .main header a img{
+        width: 50%;
+    }
+    
+   .main .container{
+        flex-direction: column;
+       
+    }
+  
+    .illustra img{
+        width: 100%;
+    }
+    .container .note{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .note h1, .note p{
+        max-width: 100%;
+        word-spacing: 2px;
+    }
+     .note h1{
+        font-size: 2rem;
+    }
+    .note p{
+        font-size: 1.3rem;
+    }
+    .note button{
+        width: 65%;
+        padding:12px 0 ;
+    }   
+    footer{
+        justify-content: center;
+        margin:50px 0 24px ;
+    }
+
+}
