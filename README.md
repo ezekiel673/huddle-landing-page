@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Huddle-landing-page](https://github.com/Ezekiel-Great/huddle-landing-page)
-- Live Site URL: [Huddle-landing-page Live site URL]( https://ezekiel-great.github.io/huddle-landing-page/)
+- Live Site URL: [Huddle-landing-page Live site URL]( https://ezekiel673.github.io/huddle-landing-page/)
 
 
 ## My process
